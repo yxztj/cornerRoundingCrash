@@ -1,0 +1,6 @@
+framework module Pods_cornerClippingCrash {
+  umbrella header "Pods-cornerClippingCrash-umbrella.h"
+
+  export *
+  module * { export * }
+}

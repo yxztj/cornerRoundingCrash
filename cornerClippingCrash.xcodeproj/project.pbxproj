@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66F70E8DDA5CDE6775053F95 /* Pods_cornerClippingCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BF3955B15720782AE5B338 /* Pods_cornerClippingCrash.framework */; };
 		99357F7320F602F000F254EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99357F7220F602F000F254EC /* AppDelegate.swift */; };
 		99357F7520F602F000F254EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99357F7420F602F000F254EC /* ViewController.swift */; };
 		99357F7820F602F000F254EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99357F7620F602F000F254EC /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71BF3955B15720782AE5B338 /* Pods_cornerClippingCrash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cornerClippingCrash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99357F6F20F602F000F254EC /* cornerClippingCrash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cornerClippingCrash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99357F7220F602F000F254EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99357F7420F602F000F254EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		99357F7920F602F200F254EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99357F7C20F602F200F254EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99357F7E20F602F200F254EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB3663CBD11BDFD2429E34E5 /* Pods-cornerClippingCrash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cornerClippingCrash.release.xcconfig"; path = "Pods/Target Support Files/Pods-cornerClippingCrash/Pods-cornerClippingCrash.release.xcconfig"; sourceTree = "<group>"; };
+		DC9174CA706B9B009E56708E /* Pods-cornerClippingCrash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cornerClippingCrash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cornerClippingCrash/Pods-cornerClippingCrash.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66F70E8DDA5CDE6775053F95 /* Pods_cornerClippingCrash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AADBFAC4BDAA3D1B35DAE4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC9174CA706B9B009E56708E /* Pods-cornerClippingCrash.debug.xcconfig */,
+				DB3663CBD11BDFD2429E34E5 /* Pods-cornerClippingCrash.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		99357F6620F602F000F254EC = {
 			isa = PBXGroup;
 			children = (
 				99357F7120F602F000F254EC /* cornerClippingCrash */,
 				99357F7020F602F000F254EC /* Products */,
+				3AADBFAC4BDAA3D1B35DAE4F /* Pods */,
+				B7C783B39C835852BD99CF57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = cornerClippingCrash;
 			sourceTree = "<group>";
 		};
+		B7C783B39C835852BD99CF57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71BF3955B15720782AE5B338 /* Pods_cornerClippingCrash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99357F8120F602F200F254EC /* Build configuration list for PBXNativeTarget "cornerClippingCrash" */;
 			buildPhases = (
+				2E89B90836DB0626EC9D3D0C /* [CP] Check Pods Manifest.lock */,
 				99357F6B20F602F000F254EC /* Sources */,
 				99357F6C20F602F000F254EC /* Frameworks */,
 				99357F6D20F602F000F254EC /* Resources */,
+				B6B632E53F4B514454927232 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E89B90836DB0626EC9D3D0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cornerClippingCrash-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6B632E53F4B514454927232 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-cornerClippingCrash/Pods-cornerClippingCrash-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cornerClippingCrash/Pods-cornerClippingCrash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99357F6B20F602F000F254EC /* Sources */ = {
@@ -278,15 +349,13 @@
 		};
 		99357F8220F602F200F254EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC9174CA706B9B009E56708E /* Pods-cornerClippingCrash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4CSCF7378L;
 				INFOPLIST_FILE = cornerClippingCrash/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruguoapp.cornerClippingCrash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +365,13 @@
 		};
 		99357F8320F602F200F254EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB3663CBD11BDFD2429E34E5 /* Pods-cornerClippingCrash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4CSCF7378L;
 				INFOPLIST_FILE = cornerClippingCrash/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruguoapp.cornerClippingCrash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
